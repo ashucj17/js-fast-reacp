@@ -18,7 +18,7 @@ let some = "Ashish";
 
 let arr = [7,5,6,9,8,]
 
-console.log(typeof arr);
+// console.log(typeof arr);
 
 let emp = {
     Name: "ashish",
@@ -29,7 +29,33 @@ let emp = {
 console.log(typeof "Name")
 
 let myfunction = function(){
-    console.log("hollo world")
+    // console.log("hollo world")
 }
 
-console.log(typeof myfunction)
+// console.log(typeof myfunction)
+
+//===================================
+
+// memory stack
+
+let myChannel = "Codingduniya"
+
+let anotherChannel = myChannel;
+anotherChannel= "Codingverse"
+
+// console.log(myChannel)
+// console.log(anotherChannel)
+
+//heap memory
+
+
+let userOne ={
+    Name: "Ashish",
+    Email: "ashish@google.com"
+}
+
+let userTwo = userOne;
+userTwo.Email= "ashu@amazon.com"
+
+console.log(userOne)
+console.log(userTwo)
