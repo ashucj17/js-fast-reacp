@@ -19,7 +19,7 @@ let jsUser = {
 // console.log(jsUser['age'])
 
 // console.log(jsUser['full name'])
-// console.log(jsUser[mySym])
+// console.log(jsUser[mySym]) // to access the symbol we ahev to add key in square barckets
 
 // jsUser.email = 'ashish@google.com'
 // Object.freeze(jsUser)
@@ -29,9 +29,12 @@ let jsUser = {
 jsUser.greeting= function(){
     console.log("hello everyone")
 }
-console.log(jsUser.greeting());
+jsUser.greeting()
+// console.log(jsUser.greeting());
 
-jsUser.greeting2= function(){
-console.log(`Hello Js user, ${this["full name"]}`)
-}
-console.log(jsUser.greeting2())
+// jsUser.greeting2= function(){
+// console.log(`Hello Js user, ${this["full name"]}`)
+// }
+// console.log(jsUser.greeting2())
+
+//  the undefined appears because the fgreeting() function dosent return any value it only logs to the console.
