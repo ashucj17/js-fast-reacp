@@ -61,8 +61,27 @@ let users = [
         ]
 // console.log(users);
 
-console.log(Object.keys(myObj))
-console.log(Object.values(myObj))
-console.log(Object.entries(myObj))
+// console.log(Object.keys(myObj))
+// console.log(Object.values(myObj))
+// console.log(Object.entries(myObj))
 // all the above methods provides the value in array format
-console.log(myObj.hasOwnProperty('address'))
+// console.log(myObj.hasOwnProperty('address'))
+
+let car = {
+    carName: "Lord Aulto",
+    brandName: "Suzuki",
+    year: 2022,
+    price: 400000,
+    chessieNumber: 'AS785536563DHBFH7845'
+}
+// console.log(car.brandName);
+
+const{carName}= car; // another way to access object keys
+
+// console.log(carName)
+
+const {chessieNumber: chessie}= car;
+console.log(chessie)
+
+
+
