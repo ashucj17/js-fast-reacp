@@ -1,0 +1,42 @@
+Javascript Execution context- Environment where the JS code executed.
+There are three tuypes of execution context:
+1. Global Execution context
+2. Function Execution context
+3. Eval Execution context
+
+How JS code executed?
+- It runs in two phases
+1. Memeory creaton phase(creation phase):
+Only the memory alocation will be done.
+
+2. Execution phase
+
+cycle 1: It contain two phase
+
+Allocation phase
+
+step1. Global execution or global environment
+All the code will run through global execution and the code will allocated to the this keyword.
+
+ste2. Memory phase
+All veriable are allocated and the undefined value will assigned to them.
+
+
+Exmaple:
+let val1= 10;
+let val2 =5;
+
+function addNum(num1, num2){
+
+    let total = num1 + num2;
+    return total;
+}
+
+let reuslt1 = addNum(val1,val2);
+let result2=addNum(10,2)
+
+val1= undefined;
+val2= undefined;
+addNum= defination
+result1= undefined;
+result2= undefined;
