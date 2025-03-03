@@ -40,3 +40,32 @@ val2= undefined;
 addNum= defination
 result1= undefined;
 result2= undefined;
+
+cycle 2:
+
+Execution phase:
+Execution process will start with allting the executional values to the veriable.
+
+val1 = 10;
+val2 = 5;
+
+addNum, the function defination will be skiped as it already done in memory phase.
+
+result1 = addNum -> here, addNum is a function it will create a new execution context.
+New execution context contain new veriable environment and executional thread.
+this process will repeat whenever a function is called.
+
+Memeory phase:
+val1= undefined;
+val2 = undefined;
+total = undefined;
+
+Execution phase:
+
+num1= 10;
+num2= 5;
+total= 15;
+
+And the total return to global executional context.
+New execution context will be deleted after the cycle completion or when the output (return value) returned to the global executional context.
+
