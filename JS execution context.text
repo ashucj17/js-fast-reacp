@@ -69,3 +69,6 @@ total= 15;
 And the total return to global executional context.
 New execution context will be deleted after the cycle completion or when the output (return value) returned to the global executional context.
 
+
+
+Memory stack follows the LIFO method: Last in first out.
