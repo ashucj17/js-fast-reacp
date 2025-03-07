@@ -26,7 +26,7 @@ let emp = {
     address: "SQM"
 }
 
-console.log(typeof "Name")
+// console.log(typeof "Name")
 
 let myfunction = function(){
     // console.log("hollo world")
@@ -57,5 +57,18 @@ let userOne ={
 let userTwo = userOne;
 userTwo.Email= "ashu@amazon.com"
 
-console.log(userOne)
-console.log(userTwo)
+// console.log(userOne)
+// console.log(userTwo)
+
+
+let myObj = {
+    name: "Ashish",
+    age: 30,
+    subject: [
+        {Maths:80,
+            Science:98,
+            English:78,
+            Hindi:96}]
+}
+
+console.log(myObj.subject[0].English)

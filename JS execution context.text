@@ -71,4 +71,4 @@ New execution context will be deleted after the cycle completion or when the out
 
 
 
-Memory stack follows the LIFO method: Last in first out.
+Memory stack flow follows the LIFO method: Last in first out.
