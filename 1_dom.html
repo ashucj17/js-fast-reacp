@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Dom</title>
+
+    <style>
+        .bg-dark{
+            background: #212121;
+            color: #fff;
+        }
+    </style>
+
+</head>
+<body class="bg-dark">
+    <div id="test">
+        <h1 id="title">Learnign Document Object Model <span style="display: none;"> extra text</span></h1>
+        <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, nam!</p>
+
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+
+        <h3 class="random">Sunday</h3>
+        <h3 class="random">Monday</h3>
+        <h3 class="random">Tuesday</h3>
+        <!-- <h3 class="random">Tuesday</h3> -->
+    </div>
+
+    <script>
+    //   let myDetail =   document.getElementById('test').getAttribute("id");
+
+      let myDetail = document.getElementById('title')
+
+    //   innertext shows the text to be displayed on screen.
+    // TextContent hide the text with style display none property.
+    // innerHTML display the complete html
+      myDetail.style.color = 'green';
+      myDetail.style.boxShadow = "0 5px 5px rgba(255,255,255,0.5)"
+      myDetail.innerText = "Hello this the new begnining"
+        console.log(myDetail);
+
+    //    let myUl =  document.querySelector('ul')
+    //    console.log(myUl)
+
+    //    let li_2 = myUl.querySelector("li:nth-child(2)")
+    //    console.log(li_2)
+
+    //    li_2.style.background = "Orange"
+    //    li_2.style.color = "#fff"
+
+    // let myUl = document.querySelectorall('li')
+    // console.log(myUl)
+
+   let heading = document.getElementsByClassName("random");
+   console.log(heading);
+   let conversion = Array.from(heading); // Conversion from html collection into array
+   console.log(conversion)
+
+
+    </script>
+</body>
+</html>
