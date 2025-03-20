@@ -32,6 +32,35 @@
     dynamicText("Hello")
     dynamicText("I am")
     dynamicText("here")
+
+
+    function optimizedWay (language){
+        let h2 = document.createElement('h2')
+        h2.appendChild(document.createTextNode(language))
+        document.querySelector('section').appendChild(h2)
+
+    }
+    optimizedWay("Sayonara")
+
+    // Adding element with innerHtml and by creating new element
+    
+    let secondGreat =document.querySelector('h2:nth-child(2)')
+    console.log(secondGreat);
+    // secondLang.innerHTML = "we are!"
+    let EditedTxt = document.createElement('h2')
+    EditedTxt.textContent = "We are!";
+    secondGreat.replaceWith(EditedTxt)
+
+    //  adding element with outer HTML
+
+    let firstElement = document.querySelector('h2:nth-child(1)')
+    firstElement.outerHTML = "<h2>Good morning</h2>"
+
+    // removing an element
+    let lastElement = document.querySelector('h2:last-child')
+    lastElement.remove()
+
+    
     </script>
 </body>
 </html>
