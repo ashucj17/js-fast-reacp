@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body style="background: #212121; color: #fff;">
+
+
+
+
+    <script>
+
+    //    let div = document.createElement('div')
+    //    let h1 = document.createElement('h1')
+    //    document.querySelector('body').appendChild(div)
+    //   document.querySelector('div').appendChild(h1)
+    //   h1.innerText = "Hello world!"
+    //   console.log(div)
+
+
+    function dynamicText(heading){
+        let section = document.createElement('section');
+        let h2 = document.createElement('h2');
+        document.body.appendChild(section)
+        document.querySelector('section').appendChild(h2);
+        h2.innerText= `${heading}`
+        console.log(section)
+    }
+
+    dynamicText("Hello")
+    dynamicText("I am")
+    dynamicText("here")
+    </script>
+</body>
+</html>
