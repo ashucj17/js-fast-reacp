@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element</title>
+</head>
+<body style="background: #212121; color: #fff;">
+
+
+    <script>
+            let div = document.createElement('div')
+            div.className = "container"
+            // div.id= 'alphaOne'
+            div.id = Math.round(Math.random() * 10 + 1)
+            div.setAttribute("name","remember-me")
+            // div.innerText = "Hello Me"
+            let addedText = document.createTextNode("Hello Everyone")
+            div.appendChild(addedText)
+
+            document.body.appendChild(div)
+            console.log(div)
+
+
+    </script>
+
+
+</body>
+</html>
